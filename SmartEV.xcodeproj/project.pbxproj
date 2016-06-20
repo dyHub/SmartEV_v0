@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56CB79CB1D186C7B00E969AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB79CA1D186C7B00E969AC /* AppDelegate.swift */; };
+		56CB79CD1D186C7B00E969AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB79CC1D186C7B00E969AC /* ViewController.swift */; };
+		56CB79D01D186C7B00E969AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CB79CE1D186C7B00E969AC /* Main.storyboard */; };
+		56CB79D21D186C7B00E969AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56CB79D11D186C7B00E969AC /* Assets.xcassets */; };
+		56CB79D51D186C7B00E969AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CB79D31D186C7B00E969AC /* LaunchScreen.storyboard */; };
+		56CB79E01D186C7C00E969AC /* SmartEVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB79DF1D186C7C00E969AC /* SmartEVTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56CB79DC1D186C7C00E969AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56CB79BF1D186C7900E969AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56CB79C61D186C7900E969AC;
+			remoteInfo = SmartEV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		56CB79C71D186C7900E969AC /* SmartEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartEV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56CB79CA1D186C7B00E969AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		56CB79CC1D186C7B00E969AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		56CB79CF1D186C7B00E969AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56CB79D11D186C7B00E969AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56CB79D41D186C7B00E969AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		56CB79D61D186C7B00E969AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56CB79DB1D186C7C00E969AC /* SmartEVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartEVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56CB79DF1D186C7C00E969AC /* SmartEVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartEVTests.swift; sourceTree = "<group>"; };
+		56CB79E11D186C7C00E969AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56CB79C41D186C7900E969AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56CB79D81D186C7C00E969AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56CB79BE1D186C7900E969AC = {
+			isa = PBXGroup;
+			children = (
+				56CB79C91D186C7B00E969AC /* SmartEV */,
+				56CB79DE1D186C7C00E969AC /* SmartEVTests */,
+				56CB79C81D186C7900E969AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		56CB79C81D186C7900E969AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56CB79C71D186C7900E969AC /* SmartEV.app */,
+				56CB79DB1D186C7C00E969AC /* SmartEVTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56CB79C91D186C7B00E969AC /* SmartEV */ = {
+			isa = PBXGroup;
+			children = (
+				56CB79CA1D186C7B00E969AC /* AppDelegate.swift */,
+				56CB79CC1D186C7B00E969AC /* ViewController.swift */,
+				56CB79CE1D186C7B00E969AC /* Main.storyboard */,
+				56CB79D11D186C7B00E969AC /* Assets.xcassets */,
+				56CB79D31D186C7B00E969AC /* LaunchScreen.storyboard */,
+				56CB79D61D186C7B00E969AC /* Info.plist */,
+			);
+			path = SmartEV;
+			sourceTree = "<group>";
+		};
+		56CB79DE1D186C7C00E969AC /* SmartEVTests */ = {
+			isa = PBXGroup;
+			children = (
+				56CB79DF1D186C7C00E969AC /* SmartEVTests.swift */,
+				56CB79E11D186C7C00E969AC /* Info.plist */,
+			);
+			path = SmartEVTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56CB79C61D186C7900E969AC /* SmartEV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56CB79E41D186C7C00E969AC /* Build configuration list for PBXNativeTarget "SmartEV" */;
+			buildPhases = (
+				56CB79C31D186C7900E969AC /* Sources */,
+				56CB79C41D186C7900E969AC /* Frameworks */,
+				56CB79C51D186C7900E969AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartEV;
+			productName = SmartEV;
+			productReference = 56CB79C71D186C7900E969AC /* SmartEV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56CB79DA1D186C7C00E969AC /* SmartEVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56CB79E71D186C7C00E969AC /* Build configuration list for PBXNativeTarget "SmartEVTests" */;
+			buildPhases = (
+				56CB79D71D186C7C00E969AC /* Sources */,
+				56CB79D81D186C7C00E969AC /* Frameworks */,
+				56CB79D91D186C7C00E969AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56CB79DD1D186C7C00E969AC /* PBXTargetDependency */,
+			);
+			name = SmartEVTests;
+			productName = SmartEVTests;
+			productReference = 56CB79DB1D186C7C00E969AC /* SmartEVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56CB79BF1D186C7900E969AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Yuhan Dai";
+				TargetAttributes = {
+					56CB79C61D186C7900E969AC = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 282STFRV99;
+					};
+					56CB79DA1D186C7C00E969AC = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 282STFRV99;
+						TestTargetID = 56CB79C61D186C7900E969AC;
+					};
+				};
+			};
+			buildConfigurationList = 56CB79C21D186C7900E969AC /* Build configuration list for PBXProject "SmartEV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56CB79BE1D186C7900E969AC;
+			productRefGroup = 56CB79C81D186C7900E969AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56CB79C61D186C7900E969AC /* SmartEV */,
+				56CB79DA1D186C7C00E969AC /* SmartEVTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56CB79C51D186C7900E969AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56CB79D51D186C7B00E969AC /* LaunchScreen.storyboard in Resources */,
+				56CB79D21D186C7B00E969AC /* Assets.xcassets in Resources */,
+				56CB79D01D186C7B00E969AC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56CB79D91D186C7C00E969AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56CB79C31D186C7900E969AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56CB79CD1D186C7B00E969AC /* ViewController.swift in Sources */,
+				56CB79CB1D186C7B00E969AC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56CB79D71D186C7C00E969AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56CB79E01D186C7C00E969AC /* SmartEVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56CB79DD1D186C7C00E969AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56CB79C61D186C7900E969AC /* SmartEV */;
+			targetProxy = 56CB79DC1D186C7C00E969AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		56CB79CE1D186C7B00E969AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56CB79CF1D186C7B00E969AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		56CB79D31D186C7B00E969AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56CB79D41D186C7B00E969AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56CB79E21D186C7C00E969AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56CB79E31D186C7C00E969AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56CB79E51D186C7C00E969AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmartEV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = powers.org.SmartEV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		56CB79E61D186C7C00E969AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmartEV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = powers.org.SmartEV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		56CB79E81D186C7C00E969AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmartEVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = powers.org.SmartEVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartEV.app/SmartEV";
+			};
+			name = Debug;
+		};
+		56CB79E91D186C7C00E969AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmartEVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = powers.org.SmartEVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartEV.app/SmartEV";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56CB79C21D186C7900E969AC /* Build configuration list for PBXProject "SmartEV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56CB79E21D186C7C00E969AC /* Debug */,
+				56CB79E31D186C7C00E969AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56CB79E41D186C7C00E969AC /* Build configuration list for PBXNativeTarget "SmartEV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56CB79E51D186C7C00E969AC /* Debug */,
+				56CB79E61D186C7C00E969AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		56CB79E71D186C7C00E969AC /* Build configuration list for PBXNativeTarget "SmartEVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56CB79E81D186C7C00E969AC /* Debug */,
+				56CB79E91D186C7C00E969AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56CB79BF1D186C7900E969AC /* Project object */;
+}
