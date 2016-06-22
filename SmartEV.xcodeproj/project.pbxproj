@@ -7,12 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		56CB79CB1D186C7B00E969AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB79CA1D186C7B00E969AC /* AppDelegate.swift */; };
-		56CB79CD1D186C7B00E969AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB79CC1D186C7B00E969AC /* ViewController.swift */; };
+		2FD00B40D20825AFA16B5E15 /* Pods_SmartEVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A532A814D9FEB6DA3B04D3F /* Pods_SmartEVTests.framework */; };
+		56CB79CD1D186C7B00E969AC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB79CC1D186C7B00E969AC /* LoginViewController.swift */; };
 		56CB79D01D186C7B00E969AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CB79CE1D186C7B00E969AC /* Main.storyboard */; };
 		56CB79D21D186C7B00E969AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56CB79D11D186C7B00E969AC /* Assets.xcassets */; };
 		56CB79D51D186C7B00E969AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CB79D31D186C7B00E969AC /* LaunchScreen.storyboard */; };
 		56CB79E01D186C7C00E969AC /* SmartEVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB79DF1D186C7C00E969AC /* SmartEVTests.swift */; };
+		56CB79EE1D18775900E969AC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB79ED1D18775900E969AC /* User.swift */; };
+		56CB79F11D187A1C00E969AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB79F01D187A1C00E969AC /* AppDelegate.swift */; };
+		56CB79F31D187E4800E969AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56CB79F21D187E4800E969AC /* GoogleService-Info.plist */; };
+		56CB79F41D187F1A00E969AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56CB79F21D187E4800E969AC /* GoogleService-Info.plist */; };
+		56CB79F61D18AC4900E969AC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB79F51D18AC4900E969AC /* ProfileViewController.swift */; };
+		56CB79F81D18CF9C00E969AC /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB79F71D18CF9C00E969AC /* SettingViewController.swift */; };
+		56CB79FA1D19121700E969AC /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB79F91D19121700E969AC /* MainTabViewController.swift */; };
+		56CB79FC1D19C88B00E969AC /* SignUpInit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CB79FB1D19C88B00E969AC /* SignUpInit.storyboard */; };
+		56CB79FE1D19D08B00E969AC /* ChooseCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB79FD1D19D08B00E969AC /* ChooseCarViewController.swift */; };
+		56CB7A001D19E8B000E969AC /* SetHomeLocViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB79FF1D19E8B000E969AC /* SetHomeLocViewController.swift */; };
+		56CB7A021D1A05EE00E969AC /* UploadProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB7A011D1A05EE00E969AC /* UploadProfileViewController.swift */; };
+		56CB7A051D1A072F00E969AC /* Scratch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB7A041D1A072F00E969AC /* Scratch.swift */; };
+		56CB7A071D1A0E8800E969AC /* SetUserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB7A061D1A0E8800E969AC /* SetUserNameViewController.swift */; };
+		56CB7A091D1A285600E969AC /* ProfileInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB7A081D1A285600E969AC /* ProfileInfoCell.swift */; };
+		E4551A6C51139F63D3E89E69 /* Pods_SmartEV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D81C9A9BC54CF402B47747 /* Pods_SmartEV.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18608C3432E922C012B92B41 /* Pods-SmartEVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartEVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartEVTests/Pods-SmartEVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3158BD8A76FB7B99F49F7A49 /* Pods-SmartEVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartEVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartEVTests/Pods-SmartEVTests.release.xcconfig"; sourceTree = "<group>"; };
+		339C9F30B4D131EEE6922F62 /* Pods-SmartEV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartEV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartEV/Pods-SmartEV.debug.xcconfig"; sourceTree = "<group>"; };
+		4A532A814D9FEB6DA3B04D3F /* Pods_SmartEVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartEVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CB79C71D186C7900E969AC /* SmartEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartEV.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		56CB79CA1D186C7B00E969AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		56CB79CC1D186C7B00E969AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		56CB79CC1D186C7B00E969AC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		56CB79CF1D186C7B00E969AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56CB79D11D186C7B00E969AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56CB79D41D186C7B00E969AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +54,21 @@
 		56CB79DB1D186C7C00E969AC /* SmartEVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartEVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CB79DF1D186C7C00E969AC /* SmartEVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartEVTests.swift; sourceTree = "<group>"; };
 		56CB79E11D186C7C00E969AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56CB79ED1D18775900E969AC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		56CB79F01D187A1C00E969AC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		56CB79F21D187E4800E969AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		56CB79F51D18AC4900E969AC /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		56CB79F71D18CF9C00E969AC /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		56CB79F91D19121700E969AC /* MainTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		56CB79FB1D19C88B00E969AC /* SignUpInit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUpInit.storyboard; sourceTree = "<group>"; };
+		56CB79FD1D19D08B00E969AC /* ChooseCarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseCarViewController.swift; sourceTree = "<group>"; };
+		56CB79FF1D19E8B000E969AC /* SetHomeLocViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetHomeLocViewController.swift; sourceTree = "<group>"; };
+		56CB7A011D1A05EE00E969AC /* UploadProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadProfileViewController.swift; sourceTree = "<group>"; };
+		56CB7A041D1A072F00E969AC /* Scratch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scratch.swift; sourceTree = "<group>"; };
+		56CB7A061D1A0E8800E969AC /* SetUserNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUserNameViewController.swift; sourceTree = "<group>"; };
+		56CB7A081D1A285600E969AC /* ProfileInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileInfoCell.swift; sourceTree = "<group>"; };
+		7EC4BA0BC03077746DA5CAE5 /* Pods-SmartEV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartEV.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartEV/Pods-SmartEV.release.xcconfig"; sourceTree = "<group>"; };
+		C8D81C9A9BC54CF402B47747 /* Pods_SmartEV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartEV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4551A6C51139F63D3E89E69 /* Pods_SmartEV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FD00B40D20825AFA16B5E15 /* Pods_SmartEVTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +97,8 @@
 				56CB79C91D186C7B00E969AC /* SmartEV */,
 				56CB79DE1D186C7C00E969AC /* SmartEVTests */,
 				56CB79C81D186C7900E969AC /* Products */,
+				6A797770D9CAD92628BDF5A4 /* Pods */,
+				F899BDBD65B8D152B39C2A9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,11 +114,13 @@
 		56CB79C91D186C7B00E969AC /* SmartEV */ = {
 			isa = PBXGroup;
 			children = (
-				56CB79CA1D186C7B00E969AC /* AppDelegate.swift */,
-				56CB79CC1D186C7B00E969AC /* ViewController.swift */,
-				56CB79CE1D186C7B00E969AC /* Main.storyboard */,
+				56CB7A0A1D1A6E4500E969AC /* View */,
+				56CB79EF1D187A0100E969AC /* other */,
+				56CB79EC1D186DBB00E969AC /* Layouts */,
+				56CB79EB1D186DA300E969AC /* Controllers */,
+				56CB79EA1D186D9900E969AC /* Models */,
 				56CB79D11D186C7B00E969AC /* Assets.xcassets */,
-				56CB79D31D186C7B00E969AC /* LaunchScreen.storyboard */,
+				56CB79F21D187E4800E969AC /* GoogleService-Info.plist */,
 				56CB79D61D186C7B00E969AC /* Info.plist */,
 			);
 			path = SmartEV;
@@ -96,6 +135,76 @@
 			path = SmartEVTests;
 			sourceTree = "<group>";
 		};
+		56CB79EA1D186D9900E969AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				56CB79ED1D18775900E969AC /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		56CB79EB1D186DA300E969AC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				56CB79CC1D186C7B00E969AC /* LoginViewController.swift */,
+				56CB79F51D18AC4900E969AC /* ProfileViewController.swift */,
+				56CB79F71D18CF9C00E969AC /* SettingViewController.swift */,
+				56CB79F91D19121700E969AC /* MainTabViewController.swift */,
+				56CB79FD1D19D08B00E969AC /* ChooseCarViewController.swift */,
+				56CB79FF1D19E8B000E969AC /* SetHomeLocViewController.swift */,
+				56CB7A011D1A05EE00E969AC /* UploadProfileViewController.swift */,
+				56CB7A061D1A0E8800E969AC /* SetUserNameViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		56CB79EC1D186DBB00E969AC /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				56CB79CE1D186C7B00E969AC /* Main.storyboard */,
+				56CB79D31D186C7B00E969AC /* LaunchScreen.storyboard */,
+				56CB79FB1D19C88B00E969AC /* SignUpInit.storyboard */,
+			);
+			name = Layouts;
+			sourceTree = "<group>";
+		};
+		56CB79EF1D187A0100E969AC /* other */ = {
+			isa = PBXGroup;
+			children = (
+				56CB79F01D187A1C00E969AC /* AppDelegate.swift */,
+				56CB7A041D1A072F00E969AC /* Scratch.swift */,
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
+		56CB7A0A1D1A6E4500E969AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				56CB7A081D1A285600E969AC /* ProfileInfoCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6A797770D9CAD92628BDF5A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				339C9F30B4D131EEE6922F62 /* Pods-SmartEV.debug.xcconfig */,
+				7EC4BA0BC03077746DA5CAE5 /* Pods-SmartEV.release.xcconfig */,
+				18608C3432E922C012B92B41 /* Pods-SmartEVTests.debug.xcconfig */,
+				3158BD8A76FB7B99F49F7A49 /* Pods-SmartEVTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F899BDBD65B8D152B39C2A9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8D81C9A9BC54CF402B47747 /* Pods_SmartEV.framework */,
+				4A532A814D9FEB6DA3B04D3F /* Pods_SmartEVTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56CB79E41D186C7C00E969AC /* Build configuration list for PBXNativeTarget "SmartEV" */;
 			buildPhases = (
+				C377CF4460DBAD12BAB01E25 /* [CP] Check Pods Manifest.lock */,
 				56CB79C31D186C7900E969AC /* Sources */,
 				56CB79C41D186C7900E969AC /* Frameworks */,
 				56CB79C51D186C7900E969AC /* Resources */,
+				857EB3F038C33673887D4D5F /* [CP] Embed Pods Frameworks */,
+				F21C760CA25D139291128F9A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56CB79E71D186C7C00E969AC /* Build configuration list for PBXNativeTarget "SmartEVTests" */;
 			buildPhases = (
+				FD59DA92CAD2C84B6341A287 /* [CP] Check Pods Manifest.lock */,
 				56CB79D71D186C7C00E969AC /* Sources */,
 				56CB79D81D186C7C00E969AC /* Frameworks */,
 				56CB79D91D186C7C00E969AC /* Resources */,
+				BF8C7B7C2E02952723463201 /* [CP] Embed Pods Frameworks */,
+				AC9BEC8FA383149BB4AE9D8E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,8 +295,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				56CB79D51D186C7B00E969AC /* LaunchScreen.storyboard in Resources */,
+				56CB79F31D187E4800E969AC /* GoogleService-Info.plist in Resources */,
 				56CB79D21D186C7B00E969AC /* Assets.xcassets in Resources */,
 				56CB79D01D186C7B00E969AC /* Main.storyboard in Resources */,
+				56CB79FC1D19C88B00E969AC /* SignUpInit.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,18 +306,122 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56CB79F41D187F1A00E969AC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		857EB3F038C33673887D4D5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartEV/Pods-SmartEV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC9BEC8FA383149BB4AE9D8E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartEVTests/Pods-SmartEVTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF8C7B7C2E02952723463201 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartEVTests/Pods-SmartEVTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C377CF4460DBAD12BAB01E25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F21C760CA25D139291128F9A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartEV/Pods-SmartEV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD59DA92CAD2C84B6341A287 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		56CB79C31D186C7900E969AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56CB79CD1D186C7B00E969AC /* ViewController.swift in Sources */,
-				56CB79CB1D186C7B00E969AC /* AppDelegate.swift in Sources */,
+				56CB7A051D1A072F00E969AC /* Scratch.swift in Sources */,
+				56CB79F81D18CF9C00E969AC /* SettingViewController.swift in Sources */,
+				56CB7A021D1A05EE00E969AC /* UploadProfileViewController.swift in Sources */,
+				56CB79FE1D19D08B00E969AC /* ChooseCarViewController.swift in Sources */,
+				56CB79F11D187A1C00E969AC /* AppDelegate.swift in Sources */,
+				56CB7A091D1A285600E969AC /* ProfileInfoCell.swift in Sources */,
+				56CB7A001D19E8B000E969AC /* SetHomeLocViewController.swift in Sources */,
+				56CB79CD1D186C7B00E969AC /* LoginViewController.swift in Sources */,
+				56CB7A071D1A0E8800E969AC /* SetUserNameViewController.swift in Sources */,
+				56CB79EE1D18775900E969AC /* User.swift in Sources */,
+				56CB79F61D18AC4900E969AC /* ProfileViewController.swift in Sources */,
+				56CB79FA1D19121700E969AC /* MainTabViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +550,7 @@
 		};
 		56CB79E51D186C7C00E969AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 339C9F30B4D131EEE6922F62 /* Pods-SmartEV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SmartEV/Info.plist;
@@ -340,6 +562,7 @@
 		};
 		56CB79E61D186C7C00E969AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EC4BA0BC03077746DA5CAE5 /* Pods-SmartEV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SmartEV/Info.plist;
@@ -351,6 +574,7 @@
 		};
 		56CB79E81D186C7C00E969AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18608C3432E922C012B92B41 /* Pods-SmartEVTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SmartEVTests/Info.plist;
@@ -363,6 +587,7 @@
 		};
 		56CB79E91D186C7C00E969AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3158BD8A76FB7B99F49F7A49 /* Pods-SmartEVTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SmartEVTests/Info.plist;
@@ -392,6 +617,7 @@
 				56CB79E61D186C7C00E969AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56CB79E71D186C7C00E969AC /* Build configuration list for PBXNativeTarget "SmartEVTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +626,7 @@
 				56CB79E91D186C7C00E969AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

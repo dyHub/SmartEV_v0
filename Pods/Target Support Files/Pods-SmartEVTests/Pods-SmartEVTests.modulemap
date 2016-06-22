@@ -1,0 +1,6 @@
+framework module Pods_SmartEVTests {
+  umbrella header "Pods-SmartEVTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
