@@ -1,2 +1,4 @@
 *.plist
 */Scratch.*
+GoogleService-Info.plist
+Info.plist
