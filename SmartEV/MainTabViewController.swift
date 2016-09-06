@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import FirebaseAuth
 
 class MainTabViewController: UITabBarController {
+    
+    // MARK: Constants
+    let user = FIRAuth.auth()?.currentUser
     
     // MARK: UIViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        user?.reloadWithCompletion(nil)
     }
     
 }

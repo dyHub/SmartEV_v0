@@ -33,7 +33,6 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        user?.profileChangeRequest().displayName = "abc"
         userNameLabel.text = user?.displayName ?? user?.email
         
         // customize profile image
@@ -44,18 +43,14 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         self.profileImage.layer.cornerRadius = self.profileImage.frame.height/2
         self.profileImage.clipsToBounds = true
         
-        // Register the table view cell class and its reuse id
-        //self.tableView.registerClass(ProfileInfoCell.self, forCellReuseIdentifier: cellReuseIdentifier)
-        
-        //self.tableView.registerNib(UINib(nibName: "ProfileInfoCell", bundle: nil), forCellReuseIdentifier: cellReuseIdentifier)
-        
-        // This view controller itself will provide the delegate methods and row data for the table view.
         tableView.delegate = self
         tableView.dataSource = self
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
+        
+        userNameLabel.text = user?.displayName ?? user?.email
     }
     
     

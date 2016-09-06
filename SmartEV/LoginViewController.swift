@@ -33,7 +33,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func viewDidAppear(animated: Bool) {
-        if (FIRAuth.auth()?.currentUser != nil) { //error here
+        if (FIRAuth.auth()?.currentUser != nil) {
             self.showMainTabView()
         }
     }
@@ -80,23 +80,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: helper functions
     
-    func addErrorAlert(error: NSError, alertTitle: String){
-        // alert user when error occurs
-        let errorAlert = UIAlertController(title: alertTitle,
-                                           message: "Please make sure your email and password are valid",
-                                           preferredStyle: .Alert)
-        let okAction = UIAlertAction(title: "OK",
-                                     style: .Default) { (action: UIAlertAction) -> Void in
-                                        
-        }
-        errorAlert.addAction(okAction)
-        
-        self.presentViewController(errorAlert,
-                                   animated: true,
-                                   completion: nil)
-        
-    }
-    
     func SignInUser(email: String, password: String){
         FIRAuth.auth()?.signInWithEmail(email, password: password) {
             (user, error) in
@@ -107,8 +90,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 return
             }
             else {
-                // sign in authenticated user
-                //self.performSegueWithIdentifier(self.LoginToCarUsage, sender: nil)
                 self.showMainTabView()
             }
         }
@@ -124,26 +105,47 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 return
             }
             else {
-                user!.profileChangeRequest().displayName = user!.email!.componentsSeparatedByString("@")[0]
-                self.showNewUserView()
-                // Sign in user use firebase
-                //self.SignInUser(email, password: password)
                 FIRAuth.auth()?.signInWithEmail(email, password: password) {
                     (user, error) in //...
                 }
+                self.showNewUserView()
             }
         }
     }
     
+    /**
+     * Triger: Sign up with a new user account
+     */
     func showNewUserView(){
         let SignUpBoard = UIStoryboard(name: "SignUpInit", bundle: nil)
         let newUserVC = SignUpBoard.instantiateViewControllerWithIdentifier("SetUserNameView") as!SetUserNameViewController
         self.presentViewController(newUserVC, animated: true, completion: nil)
     }
     
+    /**
+     * Triger: Log in with an existing account
+     */
     func showMainTabView(){
         let MainVC = self.storyboard?.instantiateViewControllerWithIdentifier("MainTabView") as!MainTabViewController
         self.presentViewController(MainVC, animated: true, completion: nil)
+    }
+    
+    
+    func addErrorAlert(error: NSError, alertTitle: String){
+        // alert user when error occurs
+        let errorAlert = UIAlertController(title: alertTitle,
+                                           message: error.localizedDescription,
+                                           preferredStyle: .Alert)
+        let okAction = UIAlertAction(title: "OK",
+                                     style: .Default) { (action: UIAlertAction) -> Void in
+                                        
+        }
+        errorAlert.addAction(okAction)
+        
+        self.presentViewController(errorAlert,
+                                   animated: true,
+                                   completion: nil)
+        
     }
     
 }
