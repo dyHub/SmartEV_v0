@@ -25,6 +25,8 @@ class LoginViewController: UIViewController {
     // MARK: UIViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.hideKeyboardWhenTappedAround()
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -40,8 +42,8 @@ class LoginViewController: UIViewController {
      */
     @IBAction func loginDidTouch(sender: AnyObject) {
         
-        /* DEVELOPING SIGN UP INITIAL STORY
-        self.showNewUserView() */
+        /* DEVELOPING SIGN UP INITIAL STORY */
+        //self.showNewUserView()
         
         
         
@@ -114,12 +116,13 @@ class LoginViewController: UIViewController {
                 return
             }
             else {
+                user!.profileChangeRequest().displayName = user!.email!.componentsSeparatedByString("@")[0]
+                self.showNewUserView()
                 // Sign in user use firebase
                 //self.SignInUser(email, password: password)
                 FIRAuth.auth()?.signInWithEmail(email, password: password) {
                     (user, error) in //...
                 }
-                self.showNewUserView()
             }
         }
     }

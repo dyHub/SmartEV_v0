@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class SetUserNameViewController: UIViewController {
     
     // MARK: Constants
+    let user = FIRAuth.auth()?.currentUser
     
     // MARK: Outlets
     @IBOutlet weak var userNameTextField: UITextField!
@@ -22,6 +25,8 @@ class SetUserNameViewController: UIViewController {
     // MARK: UIViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
+
         UserNameLabel.text = ""
         
         // disable next button
@@ -43,6 +48,9 @@ class SetUserNameViewController: UIViewController {
             // enable next button
             NextButton.enabled = true
             NextButton.backgroundColor = NextBackground
+            
+            // save user's name on firebase
+            user?.profileChangeRequest().displayName = UserNameLabel.text
         }
     }
     

@@ -8,6 +8,7 @@ target 'SmartEV' do
   # Pods for SmartEV
   pod 'Firebase'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
   target 'SmartEVTests' do
     inherit! :search_paths

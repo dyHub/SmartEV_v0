@@ -7,10 +7,16 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import FirebaseAuth
 
 class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
+    // MARK: Constants
+    let user = FIRAuth.auth()?.currentUser
+    
     // MARK: Outlets
+    @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var tableView: UITableView!
@@ -22,8 +28,13 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     // cell reuse id (cells that scroll out of view can be reused)
     let cellReuseIdentifier = "profileInfoCell"
     
+    let ref = FIRDatabase.database().reference()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        user?.profileChangeRequest().displayName = "abc"
+        userNameLabel.text = user?.displayName ?? user?.email
         
         // customize profile image
         self.profileImage.layer.borderWidth = 2.0
@@ -32,7 +43,6 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         // set the profile image to be circular
         self.profileImage.layer.cornerRadius = self.profileImage.frame.height/2
         self.profileImage.clipsToBounds = true
-        
         
         // Register the table view cell class and its reuse id
         //self.tableView.registerClass(ProfileInfoCell.self, forCellReuseIdentifier: cellReuseIdentifier)

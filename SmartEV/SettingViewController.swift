@@ -17,9 +17,12 @@ class SettingViewController: UITableViewController {
     }
 
     // MARK: Actions
-    @IBAction func LogOutFromSetting(sender: UIButton) {
+    @IBAction func logOutFromSetting(sender: UIButton) {
         try! FIRAuth.auth()!.signOut()
         let LogInVC = self.storyboard?.instantiateViewControllerWithIdentifier("LogInView") as!LoginViewController
         self.presentViewController(LogInVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func deleteAccountFromSetting(sender: AnyObject) {
     }
 }
