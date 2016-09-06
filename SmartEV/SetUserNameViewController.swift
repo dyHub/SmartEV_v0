@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class SetUserNameViewController: UIViewController {
+class SetUserNameViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Constants
     let user = FIRAuth.auth()?.currentUser
@@ -26,6 +26,7 @@ class SetUserNameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+        userNameTextField.delegate = self
 
         UserNameLabel.text = ""
         
@@ -37,6 +38,11 @@ class SetUserNameViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     // MARK: Actions

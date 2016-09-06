@@ -11,7 +11,7 @@ import QuartzCore
 import Firebase
 import FirebaseAuth
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Constants
     let LoginToCarUsage = "LoginToCarUsage"
@@ -27,12 +27,20 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         self.hideKeyboardWhenTappedAround()
+        textFieldLoginEmail.delegate = self
+        textFieldLoginPassword.delegate = self
+        
     }
     
     override func viewDidAppear(animated: Bool) {
         if (FIRAuth.auth()?.currentUser != nil) { //error here
             self.showMainTabView()
         }
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     // MARK: Actions

@@ -17,12 +17,26 @@ class SettingViewController: UITableViewController {
     }
 
     // MARK: Actions
+    
     @IBAction func logOutFromSetting(sender: UIButton) {
         try! FIRAuth.auth()!.signOut()
-        let LogInVC = self.storyboard?.instantiateViewControllerWithIdentifier("LogInView") as!LoginViewController
-        self.presentViewController(LogInVC, animated: true, completion: nil)
+        self.backToLogInPage();
+    }
+    @IBAction func deleteAccountFromSetting(sender: UIButton) {
+        let user = FIRAuth.auth()?.currentUser
+        
+        user?.deleteWithCompletion { error in
+            if error != nil {
+                // An error happened.
+            } else {
+                // Account deleted.
+                self.backToLogInPage()
+            }
+        }
     }
     
-    @IBAction func deleteAccountFromSetting(sender: AnyObject) {
+    func backToLogInPage() {
+        let LogInVC = self.storyboard?.instantiateViewControllerWithIdentifier("LogInView") as!LoginViewController
+        self.presentViewController(LogInVC, animated: true, completion: nil)
     }
 }
