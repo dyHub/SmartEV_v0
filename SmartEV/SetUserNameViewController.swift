@@ -26,6 +26,7 @@ class SetUserNameViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+        
         userNameTextField.delegate = self
 
         UserNameLabel.text = ""
@@ -48,22 +49,35 @@ class SetUserNameViewController: UIViewController, UITextFieldDelegate {
     // MARK: Actions
     @IBAction func SaveAction(sender: AnyObject) {
         if (userNameTextField.text?.isEmpty == true) {
-            addErrorAlert()
+            addErrorAlert("Please enter a valid user name")
         } else {
-            UserNameLabel.text = userNameTextField.text
-            // enable next button
-            NextButton.enabled = true
-            NextButton.backgroundColor = NextBackground
-            
             // save user's name on firebase
-            user?.profileChangeRequest().displayName = UserNameLabel.text
+            let changeRequest = user?.profileChangeRequest()
+            changeRequest!.displayName = userNameTextField.text
+            
+            changeRequest!.commitChangesWithCompletion { error in
+                if error != nil {
+                    // An error happened.
+                    debugPrint("error")
+                    self.addErrorAlert("Something went wrong, please try again!");
+                } else {
+                    // Profile updated.
+                    self.UserNameLabel.text = self.user?.displayName
+                    
+                    // enable next button
+                    self.NextButton.enabled = true
+                    self.NextButton.backgroundColor = self.NextBackground
+                    self.navigationController?.popViewControllerAnimated(true)
+                }
+            }
+
         }
     }
     
-    func addErrorAlert(){
+    func addErrorAlert(messageString: String){
         // alert user when error occurs
         let errorAlert = UIAlertController(title: "Error",
-                                           message: "Please enter a valid user name",
+                                           message: messageString,
                                            preferredStyle: .Alert)
         let okAction = UIAlertAction(title: "OK",
                                      style: .Default) { (action: UIAlertAction) -> Void in

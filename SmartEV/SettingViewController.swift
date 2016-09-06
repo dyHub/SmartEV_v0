@@ -28,6 +28,7 @@ class SettingViewController: UITableViewController {
         user?.deleteWithCompletion { error in
             if error != nil {
                 // An error happened.
+                debugPrint(error)
             } else {
                 // Account deleted.
                 self.backToLogInPage()

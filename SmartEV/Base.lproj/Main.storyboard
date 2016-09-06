@@ -525,6 +525,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="UserNameTextField" destination="XGO-e4-ulm" id="ZS2-s2-Ydb"/>
+                        <outlet property="saveUserNameButton" destination="9hH-5b-26U" id="3X4-x4-pGe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aLp-8O-jpc" userLabel="First Responder" sceneMemberID="firstResponder"/>
