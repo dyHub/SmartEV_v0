@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SmartEV/SettingViewController.swift"
-            timestampString = "494896201.192961"
+            timestampString = "494973872.281409"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "deleteAccountFromSetting(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -41,13 +41,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SmartEV/ChangeUserNameViewController.swift"
-            timestampString = "494896201.192961"
+            filePath = "SmartEV/SetUserNameViewController.swift"
+            timestampString = "494973652.219773"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "addErrorAlert(_:)"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "SaveAction(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

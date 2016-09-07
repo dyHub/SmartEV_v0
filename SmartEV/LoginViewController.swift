@@ -86,7 +86,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             if ((error) != nil) {
                 print(error!.localizedDescription)
                 let alertTitle = "Log In Error"
-                self.addErrorAlert(error!, alertTitle: alertTitle)
+                self.addErrorAlert(error!.localizedDescription, alertTitle: alertTitle)
                 return
             }
             else {
@@ -101,7 +101,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             if ((error) != nil) {
                 print(error!.localizedDescription)
                 let alertTitle = "Sign Up Error"
-                self.addErrorAlert(error!, alertTitle: alertTitle)
+                self.addErrorAlert(error!.localizedDescription, alertTitle: alertTitle)
                 return
             }
             else {
@@ -128,24 +128,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     func showMainTabView(){
         let MainVC = self.storyboard?.instantiateViewControllerWithIdentifier("MainTabView") as!MainTabViewController
         self.presentViewController(MainVC, animated: true, completion: nil)
-    }
-    
-    
-    func addErrorAlert(error: NSError, alertTitle: String){
-        // alert user when error occurs
-        let errorAlert = UIAlertController(title: alertTitle,
-                                           message: error.localizedDescription,
-                                           preferredStyle: .Alert)
-        let okAction = UIAlertAction(title: "OK",
-                                     style: .Default) { (action: UIAlertAction) -> Void in
-                                        
-        }
-        errorAlert.addAction(okAction)
-        
-        self.presentViewController(errorAlert,
-                                   animated: true,
-                                   completion: nil)
-        
     }
     
 }

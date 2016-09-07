@@ -49,7 +49,7 @@ class SetUserNameViewController: UIViewController, UITextFieldDelegate {
     // MARK: Actions
     @IBAction func SaveAction(sender: AnyObject) {
         if (userNameTextField.text?.isEmpty == true) {
-            addErrorAlert("Please enter a valid user name")
+            addErrorAlert("Please enter a valid user name", alertTitle: "Set Name Error")
         } else {
             // save user's name on firebase
             let changeRequest = user?.profileChangeRequest()
@@ -59,7 +59,7 @@ class SetUserNameViewController: UIViewController, UITextFieldDelegate {
                 if error != nil {
                     // An error happened.
                     debugPrint("error")
-                    self.addErrorAlert("Something went wrong, please try again!");
+                    self.addErrorAlert(error!.localizedDescription, alertTitle: "Set Name Error");
                 } else {
                     // Profile updated.
                     self.UserNameLabel.text = self.user?.displayName
@@ -72,23 +72,6 @@ class SetUserNameViewController: UIViewController, UITextFieldDelegate {
             }
 
         }
-    }
-    
-    func addErrorAlert(messageString: String){
-        // alert user when error occurs
-        let errorAlert = UIAlertController(title: "Error",
-                                           message: messageString,
-                                           preferredStyle: .Alert)
-        let okAction = UIAlertAction(title: "OK",
-                                     style: .Default) { (action: UIAlertAction) -> Void in
-                                        
-        }
-        errorAlert.addAction(okAction)
-        
-        self.presentViewController(errorAlert,
-                                   animated: true,
-                                   completion: nil)
-        
     }
     
 }

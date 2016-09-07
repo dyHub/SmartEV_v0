@@ -29,6 +29,7 @@ class SettingViewController: UITableViewController {
             if error != nil {
                 // An error happened.
                 debugPrint(error)
+                self.addErrorAlert(error!.localizedDescription, alertTitle: "Delete Error")
             } else {
                 // Account deleted.
                 self.backToLogInPage()
@@ -40,4 +41,5 @@ class SettingViewController: UITableViewController {
         let LogInVC = self.storyboard?.instantiateViewControllerWithIdentifier("LogInView") as!LoginViewController
         self.presentViewController(LogInVC, animated: true, completion: nil)
     }
+
 }

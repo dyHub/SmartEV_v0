@@ -20,7 +20,8 @@ class ChooseCarViewController: UIViewController {
     // array of available cars
     var CarNames: [String] = [
         "Leaf",
-        "TeslaM3"
+        "TeslaM3",
+        "Volt"
     ]
     
     // index for current showing car image

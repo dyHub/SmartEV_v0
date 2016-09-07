@@ -16,4 +16,22 @@ extension UIViewController {
     func dismissKeyboard() {
         view.endEditing(true)
     }
+    
+    
+    func addErrorAlert(errorMessage: String, alertTitle: String){
+        // alert user when error occurs
+        let errorAlert = UIAlertController(title: alertTitle,
+                                           message: errorMessage,
+                                           preferredStyle: .Alert)
+        let okAction = UIAlertAction(title: "OK",
+                                     style: .Default) { (action: UIAlertAction) -> Void in
+                                        
+        }
+        errorAlert.addAction(okAction)
+        
+        self.presentViewController(errorAlert,
+                                   animated: true,
+                                   completion: nil)
+        
+    }
 }

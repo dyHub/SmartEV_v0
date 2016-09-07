@@ -222,7 +222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Rh-7u-jPX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="952" y="-614"/>
+            <point key="canvasLocation" x="752" y="-650"/>
         </scene>
         <!--Setting-->
         <scene sceneID="9K8-2B-WRy">
@@ -469,7 +469,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kAI-ah-Rtp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-167" y="766"/>
+            <point key="canvasLocation" x="201" y="84"/>
         </scene>
         <!--Change User Name View Controller-->
         <scene sceneID="coO-1y-BP0">
@@ -530,7 +530,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aLp-8O-jpc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="212" y="26"/>
+            <point key="canvasLocation" x="612" y="90"/>
+        </scene>
+        <!--Charge Station Map View Controller-->
+        <scene sceneID="fko-H3-Jhb">
+            <objects>
+                <viewController id="LAd-Ki-Bx8" customClass="ChargeStationMapViewController" customModule="SmartEV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mtm-jY-asw"/>
+                        <viewControllerLayoutGuide type="bottom" id="JHj-Za-wu0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a8J-e9-j9S">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="uJ8-nD-gIG">
+                                <rect key="frame" x="0.0" y="64" width="320" height="460"/>
+                            </mapView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Ugv-eq-ZxE">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uJ8-nD-gIG" firstAttribute="trailing" secondItem="Ugv-eq-ZxE" secondAttribute="trailing" id="0oV-mz-AdL"/>
+                            <constraint firstAttribute="trailing" secondItem="uJ8-nD-gIG" secondAttribute="trailing" id="8Cb-Do-HBF"/>
+                            <constraint firstItem="uJ8-nD-gIG" firstAttribute="leading" secondItem="Ugv-eq-ZxE" secondAttribute="leading" id="Kun-ab-bZS"/>
+                            <constraint firstItem="Ugv-eq-ZxE" firstAttribute="top" secondItem="mtm-jY-asw" secondAttribute="bottom" id="atK-Bb-5t7"/>
+                            <constraint firstItem="uJ8-nD-gIG" firstAttribute="bottom" secondItem="JHj-Za-wu0" secondAttribute="top" id="hv6-eo-3dr"/>
+                            <constraint firstItem="uJ8-nD-gIG" firstAttribute="leading" secondItem="a8J-e9-j9S" secondAttribute="leading" id="iMw-72-qel"/>
+                            <constraint firstItem="uJ8-nD-gIG" firstAttribute="top" secondItem="Ugv-eq-ZxE" secondAttribute="top" id="uFy-Lb-TJ8"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="mapView" destination="uJ8-nD-gIG" id="4pZ-ec-NEI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ACy-uV-Zy8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1049" y="-1322"/>
         </scene>
         <!--Charge-->
         <scene sceneID="Se4-qQ-DCD">
@@ -579,12 +621,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qhz-wk-VKT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="212" y="-614"/>
+            <point key="canvasLocation" x="264" y="-650"/>
+        </scene>
+        <!--Car Usage-->
+        <scene sceneID="edX-fo-ueE">
+            <objects>
+                <navigationController id="vyC-Z7-kUT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Car Usage" image="Car Usage" id="n2M-3a-A8t"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wep-qa-IhN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NM8-zl-qrH" kind="relationship" relationship="rootViewController" id="L0z-W5-Y61"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TSa-fZ-wYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="256" y="-1322"/>
         </scene>
         <!--Car Usage-->
         <scene sceneID="IcC-e4-Kox">
             <objects>
-                <viewController id="NM8-zl-qrH" sceneMemberID="viewController">
+                <viewController id="NM8-zl-qrH" customClass="CarUsageViewController" customModule="SmartEV" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="u4c-Bx-NgB"/>
                         <viewControllerLayoutGuide type="bottom" id="qCT-pW-qAY"/>
@@ -593,7 +654,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LogIn background" translatesAutoresizingMaskIntoConstraints="NO" id="Ahv-vE-hoi">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogIn background" translatesAutoresizingMaskIntoConstraints="NO" id="Ahv-vE-hoi">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LfA-gm-cRH">
@@ -608,23 +669,37 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHB-eB-6zD">
-                                <rect key="frame" x="61" y="50" width="199" height="65"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHB-eB-6zD">
+                                <rect key="frame" x="61" y="105" width="199" height="65"/>
                                 <color key="backgroundColor" red="0.48349582549999998" green="0.86170647899999997" blue="0.59313206259999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="OLa-Oo-2wf"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Find Charge Stations">
                                     <color key="titleColor" red="0.97733274199999998" green="0.97595625829999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="LAd-Ki-Bx8" kind="show" id="7Qt-5c-wXa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bHB-eB-6zD" firstAttribute="centerX" secondItem="QIv-mz-3d9" secondAttribute="centerX" id="C4A-Je-wha"/>
+                            <constraint firstItem="bHB-eB-6zD" firstAttribute="centerX" secondItem="Ahv-vE-hoi" secondAttribute="centerX" id="CwR-Rk-C7G"/>
+                            <constraint firstItem="bHB-eB-6zD" firstAttribute="leading" secondItem="QIv-mz-3d9" secondAttribute="leadingMargin" constant="41" id="d4K-sn-DR1"/>
+                            <constraint firstItem="bHB-eB-6zD" firstAttribute="top" secondItem="u4c-Bx-NgB" secondAttribute="bottom" constant="41" id="hBd-0n-a67"/>
+                            <constraint firstItem="Ahv-vE-hoi" firstAttribute="top" secondItem="QIv-mz-3d9" secondAttribute="top" id="nNA-Ua-6jK"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Car Usage" image="Car Usage" id="NVl-ya-UjM"/>
+                    <navigationItem key="navigationItem" id="7DM-Lw-czi"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FmA-us-NtY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="589" y="-614"/>
+            <point key="canvasLocation" x="626" y="-1322"/>
         </scene>
         <!--Main Tab View Controller-->
         <scene sceneID="HGd-DG-IFd">
@@ -637,7 +712,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="NM8-zl-qrH" kind="relationship" relationship="viewControllers" id="upT-oh-F4U"/>
+                        <segue destination="vyC-Z7-kUT" kind="relationship" relationship="viewControllers" id="tdU-Ok-uXh"/>
                         <segue destination="3KU-Yc-I8L" kind="relationship" relationship="viewControllers" id="PEC-dL-2pj"/>
                         <segue destination="bfY-Wc-BYD" kind="relationship" relationship="viewControllers" id="3cE-u7-LzA"/>
                         <segue destination="Xph-ct-adz" kind="relationship" relationship="viewControllers" id="Vgl-JB-9lE"/>
@@ -645,7 +720,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jhk-HI-cJl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-167" y="-614"/>
+            <point key="canvasLocation" x="-176" y="-732"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HGW-PD-gBh">
@@ -736,7 +811,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Be5-Si-S8V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="589" y="26"/>
+            <point key="canvasLocation" x="1022" y="90"/>
         </scene>
     </scenes>
     <resources>
