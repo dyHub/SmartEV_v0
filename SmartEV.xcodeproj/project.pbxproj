@@ -11,6 +11,7 @@
 		560BE0A31D7F4D3D00E517CF /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560BE0A21D7F4D3D00E517CF /* UIViewController.swift */; };
 		560BE0AD1D809B7600E517CF /* ChargeStationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560BE0AC1D809B7600E517CF /* ChargeStationMapViewController.swift */; };
 		56583F5D1D80A23F001027C6 /* CarUsageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56583F5C1D80A23F001027C6 /* CarUsageViewController.swift */; };
+		56583F611D80C4E0001027C6 /* LocationSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56583F601D80C4E0001027C6 /* LocationSearchTableViewController.swift */; };
 		56CB79CD1D186C7B00E969AC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB79CC1D186C7B00E969AC /* LoginViewController.swift */; };
 		56CB79D01D186C7B00E969AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CB79CE1D186C7B00E969AC /* Main.storyboard */; };
 		56CB79D21D186C7B00E969AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56CB79D11D186C7B00E969AC /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		560BE0A21D7F4D3D00E517CF /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		560BE0AC1D809B7600E517CF /* ChargeStationMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargeStationMapViewController.swift; sourceTree = "<group>"; };
 		56583F5C1D80A23F001027C6 /* CarUsageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarUsageViewController.swift; sourceTree = "<group>"; };
+		56583F601D80C4E0001027C6 /* LocationSearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTableViewController.swift; sourceTree = "<group>"; };
 		56CB79C71D186C7900E969AC /* SmartEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartEV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CB79CC1D186C7B00E969AC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		56CB79CF1D186C7B00E969AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				560BE0A21D7F4D3D00E517CF /* UIViewController.swift */,
 				560BE0AC1D809B7600E517CF /* ChargeStationMapViewController.swift */,
 				56583F5C1D80A23F001027C6 /* CarUsageViewController.swift */,
+				56583F601D80C4E0001027C6 /* LocationSearchTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				56CB7A021D1A05EE00E969AC /* UploadProfileViewController.swift in Sources */,
 				56CB79FE1D19D08B00E969AC /* ChooseCarViewController.swift in Sources */,
 				56CB79F11D187A1C00E969AC /* AppDelegate.swift in Sources */,
+				56583F611D80C4E0001027C6 /* LocationSearchTableViewController.swift in Sources */,
 				56CB7A091D1A285600E969AC /* ProfileInfoCell.swift in Sources */,
 				56CB7A001D19E8B000E969AC /* SetHomeLocViewController.swift in Sources */,
 				56CB79CD1D186C7B00E969AC /* LoginViewController.swift in Sources */,
