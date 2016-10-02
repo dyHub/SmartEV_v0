@@ -10,12 +10,17 @@ import UIKit
 import MapKit
 import CoreLocation
 
+protocol HandleMapSearch {
+    func dropPinZoomIn(placemark:MKPlacemark)
+}
+
 class ChargeStationMapViewController: UIViewController, CLLocationManagerDelegate {
     
     // MARK: Constants
     let locationManager = CLLocationManager()
     
     var resultSearchController:UISearchController? = nil
+    var selectedPin:MKPlacemark? = nil
     
     // MARK: Outlets
     
@@ -54,6 +59,11 @@ class ChargeStationMapViewController: UIViewController, CLLocationManagerDelegat
         resultSearchController?.hidesNavigationBarDuringPresentation = false
         resultSearchController?.dimsBackgroundDuringPresentation = true
         definesPresentationContext = true
+        
+        locationSearchTable.mapView = mapView
+        
+        //  passes a handle of itself to the child controller
+        locationSearchTable.handleMapSearchDelegate = self
     }
     
     // MARK: helper functions
@@ -72,5 +82,54 @@ class ChargeStationMapViewController: UIViewController, CLLocationManagerDelegat
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         addErrorAlert(error.localizedDescription, alertTitle: "Location Error")
+    }
+    
+    func getDirections(){
+        if let selectedPin = selectedPin {
+            let mapItem = MKMapItem(placemark: selectedPin)
+            let launchOptions = [MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving]
+            mapItem.openInMapsWithLaunchOptions(launchOptions)
+        }
+    }
+}
+
+extension ChargeStationMapViewController: HandleMapSearch {
+    func dropPinZoomIn(placemark:MKPlacemark){
+        // cache the pin
+        selectedPin = placemark
+        // clear existing pins 
+        // only dealing with one annotation pin on the map at a time.)
+        mapView.removeAnnotations(mapView.annotations)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = placemark.coordinate
+        annotation.title = placemark.name
+        if let city = placemark.locality,
+            let state = placemark.administrativeArea {
+            annotation.subtitle = city + " " + state
+        }
+        mapView.addAnnotation(annotation)
+        let span = MKCoordinateSpanMake(0.05, 0.05)
+        let region = MKCoordinateRegionMake(placemark.coordinate, span)
+        mapView.setRegion(region, animated: true)
+    }
+}
+
+extension ChargeStationMapViewController : MKMapViewDelegate {
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView?{
+        if annotation is MKUserLocation {
+            //return nil so map view draws "blue dot" for standard user location
+            return nil
+        }
+        let reuseId = "pin"
+        var pinView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseId) as? MKPinAnnotationView
+        pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+        pinView?.pinTintColor = UIColor.orangeColor()
+        pinView?.canShowCallout = true
+        let smallSquare = CGSize(width: 30, height: 30)
+        let button = UIButton(frame: CGRect(origin: CGPointZero, size: smallSquare))
+        button.setBackgroundImage(UIImage(named: "car"), forState: .Normal)
+        button.addTarget(self, action: #selector(ChargeStationMapViewController.getDirections), forControlEvents: .TouchUpInside)
+        pinView?.leftCalloutAccessoryView = button
+        return pinView
     }
 }
