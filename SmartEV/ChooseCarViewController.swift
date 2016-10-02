@@ -56,11 +56,19 @@ class ChooseCarViewController: UIViewController {
             carIndex = carIndex + 1
             updateCurrentCar()
         }
+        else{
+            carIndex = 0
+            updateCurrentCar()
+        }
     }
     
     func leftArrowTapped(img: AnyObject){
         if (carIndex > 0) {
             carIndex = carIndex - 1
+            updateCurrentCar()
+        }
+        else{
+            carIndex = CarNames.count - 1
             updateCurrentCar()
         }
     }
